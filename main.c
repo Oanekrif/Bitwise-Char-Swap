@@ -7,8 +7,9 @@ void swap(char *a, char *b){
 }
 
 int main(){
-    char a = 'h';
-    char b = 'H';
+    char a, b;
+    printf("Enter two characters: ");
+    scanf("%c %c", &a, &b);
     printf("Before swap: a = %c, b = %c\n", a, b);
     swap(&a, &b);
     printf("After swap: a = %c, b = %c\n", a, b);
